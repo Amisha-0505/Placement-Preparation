@@ -226,3 +226,179 @@ Design that adapts to all screen sizes.
 - Responsive images
 
 ------------------------------------------------------------------------
+## 2️⃣1️⃣ Difference Between Inline, Block, and Inline-Block Elements
+
+### **Block Elements**
+
+-   Start on a new line\
+-   Take full width\
+-   Width/height can be set\
+-   Used for layout\
+    **Examples:** `<div>`, `<p>`, `<h1>`, `<section>`
+
+**Example Code:**
+
+``` html
+<div style="width:200px; height:50px; background:lightblue;">
+  I am a block element
+</div>
+```
+
+------------------------------------------------------------------------
+
+### **Inline Elements**
+
+-   Do not start on a new line\
+-   Take only required width\
+-   Width/height cannot be set properly\
+-   Used for styling small text portions\
+    **Examples:** `<span>`, `<a>`, `<strong>`, `<em>`
+
+**Example Code:**
+
+``` html
+<span style="background:yellow;">I am inline</span>
+```
+
+------------------------------------------------------------------------
+
+### **Inline-Block Elements**
+
+-   Do not start on new line (like inline)\
+-   Width/height can be set (like block)\
+-   Used for buttons & UI elements\
+    **Examples:** `<button>`, `<input>`, `<select>`
+
+**Example Code:**
+
+``` html
+<button style="width:100px; height:40px;">Click</button>
+```
+
+------------------------------------------------------------------------
+
+## 2️⃣2️⃣ Difference Between `<meta charset="UTF-8">` and `<meta name="viewport">`
+
+### **`<meta charset="UTF-8">`**
+
+-   Defines character encoding\
+-   Ensures correct display of emojis, symbols, Indian languages\
+-   UTF‑8 supports almost all characters
+
+**Example:**
+
+``` html
+<meta charset="UTF-8">
+```
+
+------------------------------------------------------------------------
+
+### **`<meta name="viewport">`**
+
+-   Makes webpage responsive on mobile\
+-   Scales layout to device width\
+-   Prevents zoomed-out look on phones
+
+**Example:**
+
+``` html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+------------------------------------------------------------------------
+
+### 🎉 Memory Trick
+
+-   **charset → characters**\
+-   **viewport → mobile scaling**
+
+------------------------------------------------------------------------
+
+## 2️⃣3️⃣ Difference Between `<script>` in `<head>` vs `<body>`
+
+### **Script in `<head>`**
+
+-   JS loads *before* page content\
+-   Can delay rendering\
+-   Used for must-load-early scripts (e.g., analytics)
+
+### **Script at end of `<body>`**
+
+-   HTML loads first, then JS\
+-   Faster page load\
+-   Recommended for most websites
+
+### ✅ Why scripts are placed at the bottom?
+
+-   Faster performance\
+-   DOM is fully loaded\
+-   Prevents render-blocking
+
+------------------------------------------------------------------------
+
+## 2️⃣4️⃣ Difference Between HTML Tags and Attributes
+
+### **HTML Tags**
+
+Define structure/elements of webpage.\
+Tell browser what the content *is*.
+
+**Examples:**
+
+``` html
+<p>Paragraph</p>
+<div>Container</div>
+<img>
+```
+
+------------------------------------------------------------------------
+
+### **HTML Attributes**
+
+Give *extra information* about tags.\
+Always in the opening tag.
+
+**Examples:**
+
+``` html
+<img src="logo.png" alt="Company Logo">
+<a href="https://google.com">Click</a>
+<input type="text" placeholder="Enter name">
+```
+
+------------------------------------------------------------------------
+
+### 🎉 One-line Summary
+
+-   **Tags = what the element is**\
+-   **Attributes = extra details about the element**
+
+------------------------------------------------------------------------
+
+## 2️⃣5️⃣ What is the `<link>` Tag?
+
+The `<link>` tag connects **external resources** to an HTML page.
+
+### **Where is it used?**
+
+Inside the `<head>` section.
+
+### **Common Uses**
+
+-   Linking CSS\
+-   Google fonts\
+-   Favicons
+
+### **Example:**
+
+``` html
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+```
+
+### 🎯 One-line Summary
+
+**`<link>` connects external files (mostly CSS) to your page.**
+
+------------------------------------------------------------------------
+
