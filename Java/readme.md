@@ -121,4 +121,117 @@ Java is a **powerful, secure, and platform-independent language** suitable for b
 
 ---
 
-⭐ *Perfect for interviews, projects, and production-level applications*
+## ❓ Why Java Is Not a Pure Object-Oriented Language
+
+Java is **not a pure object-oriented language** because it supports **primitive data types** that are not objects.
+
+### 🔹 Primitive Data Types in Java
+Java provides the following primitive data types:
+- `byte`
+- `boolean`
+- `char`
+- `short`
+- `int`
+- `float`
+- `long`
+- `double`
+
+These data types:
+- Are **not objects**
+- Do not belong to any class
+- Are used for **better performance and memory efficiency**
+
+In a **pure object-oriented language**, everything must be treated as an object.  
+Since Java allows primitive data types, it does not fully follow pure OOP principles.
+
+👉 **Hence, Java is not a pure object-oriented language.**
+
+---
+
+## 🧰 JDK (Java Development Kit)
+
+**JDK** stands for **Java Development Kit**.
+
+It is an essential tool for Java developers that provides everything required to:
+- Write Java programs
+- Compile Java code
+- Run Java applications
+
+### 🔹 JDK consists of:
+- **JVM (Java Virtual Machine)**
+- **JRE (Java Runtime Environment)**
+- Java Compiler (`javac`)
+- Debugging and development tools
+
+👉 JDK is mainly used by **Java developers**.
+
+---
+
+## ▶️ JRE (Java Runtime Environment)
+
+**JRE** stands for **Java Runtime Environment**.
+
+It is a software environment that allows Java applications to **run on a computer**.
+
+### 🔹 Key points:
+- JRE is a **subset of JDK**
+- It does not contain development tools
+- It provides runtime libraries and JVM
+
+👉 Required only to **run** Java programs, not to develop them.
+
+---
+
+## ⚙️ JVM (Java Virtual Machine)
+
+**JVM** stands for **Java Virtual Machine**.
+
+It is an integral part of the **JRE** and is responsible for executing Java programs.
+
+### 🔹 Functions of JVM:
+- Loads Java bytecode
+- Verifies bytecode
+- Executes bytecode
+- Converts bytecode into machine-specific instructions
+
+### 🔹 Why JVM is important:
+- Makes Java **platform-independent**
+- Allows Java programs to run on any OS with a JVM
+
+👉 This enables the concept of  
+### 🟢 **“Write Once, Run Anywhere (WORA)”**
+
+---
+
+## 🚀 JIT (Just-In-Time Compiler)
+
+**JIT** stands for **Just-In-Time Compiler**.
+
+It is a component of the Java runtime environment that **improves performance**.
+
+### 🔹 How JIT works:
+- Compiles bytecode into **native machine code at runtime**
+- Focuses on code that is executed frequently
+- Example: methods like an `add()` function that run multiple times
+
+### 🔹 Benefits:
+- Faster execution
+- Better runtime performance compared to pure interpretation
+
+---
+
+## ✅ Summary Table
+
+| Component | Description |
+|--------|------------|
+| Java not pure OOP | Supports primitive data types |
+| JDK | Used to develop, compile, and run Java programs |
+| JRE | Provides runtime environment |
+| JVM | Executes bytecode and enables platform independence |
+| JIT | Improves performance by compiling hot code |
+
+---
+
+⭐ *Perfect for interview preparation, notes, and Java fundamentals revision*
+
+
